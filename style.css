@@ -181,6 +181,7 @@ p {
   opacity: 0.5;
 }
 
+
 /* Dark theme specific - ensure good contrast */
 :root[data-bs-theme=\"dark\"] .card {
   border-color: #495057;
@@ -223,6 +224,32 @@ p {
   object-fit: cover;
   height: 400px;
 }
+
+.ptn-yellow {
+  text-shadow: 0 0 30px #ffff00, 0 0 40px #ffff00, 0 0 50px #ffff00;
+  font-weight: 700;
+}
+
+/* Google Font styles */
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.frijole-regular {
+  font-family: "Frijole", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 /* Smooth transitions for all theme changes */
 * {
