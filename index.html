@@ -1,202 +1,264 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Nalendra</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nalendra's projects</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-solid">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">About Me</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Fonts: ink-brush serif for display, clean sans for body, pixel font for tags -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-md fixed-top py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#top">Nalendra<span class="dot">.</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav align-items-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Coming soon</a>
-        </li>
-        <li class="nav-item ms-3">
-          <button class="btn btn-outline-primary theme-toggle" id="themeToggle" title="Toggle theme">
-            <span class="theme-icon">🌙</span>
-          </button>
-        </li>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#speciality">Speciality</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-    <!-- Hero Section -->
-    <div class="container mt-5" id="home">
-      <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<!-- HERO -->
+<section class="hero" id="top">
+  <svg class="hero-stroke" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+    <path d="M40,320 C160,180 260,420 380,260 C480,130 560,380 680,220 C780,90 860,300 960,180"
+      fill="none" stroke="#111111" stroke-width="26" stroke-linecap="round" opacity="0.07"/>
+    <path d="M60,180 C220,60 300,260 420,140 C540,20 640,220 780,110"
+      fill="none" stroke="#111111" stroke-width="10" stroke-linecap="round" opacity="0.10"/>
+  </svg>
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-10">
+        <div class="eyebrow">PORTFOLIO — SURABAYA, ID</div>
+        <h1 class="font-display">Nalendra<br>'s projects</h1>
+        <div class="sub">
+          <span>WEB DEVELOPER</span><span class="sep">/</span>
+          <span>PIXEL ARTIST</span><span class="sep">/</span>
+          <span>2024 — NOW</span>
+        </div>
+        <p class="hero-desc">I build clean, working websites and hand‑place every pixel in between. This page is a small, honest record of what I've made — ink on one hand, code on the other.</p>
+      </div>
+    </div>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/minecraft.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/profile1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/pelepasan.jpeg" class="d-block w-100" alt="...">
-    </div>
+  <div class="scroll-cue">
+    <span>SCROLL</span>
+    <svg viewBox="0 0 14 22" fill="none"><path d="M7 1v18M1 13l6 6 6-6" stroke="#8a8985" stroke-width="1.6"/></svg>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-      <h1 class="press-start-2p-regular">Nalendra Putra Niyansyah</h1>
-      <p>Hello! I'm Nalendra Putra Niyansyah, a student of <span class="ptn-yellow">Universitas Negeri Surabaya</span> with knowledge in various technologies. i mainly focus on frontend development using modern frameworks and AI tools.</p>
-      <p>Feel free to explore my skills and experience below!</p>
+</section>
+
+<!-- SPECIALITY -->
+<section class="section" id="speciality">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">WHAT I DO</div>
+      <h2 class="section-title font-display">My speciality</h2>
     </div>
 
-    <!-- Skills Section -->
-    <div class="container mt-5" id="skills">
-      <h2 class="text-start pirata-one-regular">Skills</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100 w-100">
-            <img src="img/htmlcss.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">HTML & CSS</h5>
-              <p class="card-text">i have intermediate knowledge of HTML and CSS. i mainly use bootstrap for styling.</p>
-            </div>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar" style="width: 50%">50%</div>
-</div>
-          </div>
+    <div class="bento bento-speciality reveal">
+      <div class="tile tile-web tile-dark">
+        <div>
+          <div class="tile-tag">SPECIALITY / 01</div>
+          <h3>Website Development</h3>
+          <p>Responsive, fast, no‑nonsense sites — from landing pages to small full‑stack websites.</p>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/javascript.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">JavaScript</h5>
-              <p class="card-text">i have basic knowledge of JavaScript. i mainly use it for adding interactivity to websites.</p>
-            </div>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar" style="width: 25%">25%</div>
-</div>
-          </div>
+        <ul class="skill-list">
+          <li>HTML/CSS</li><li>JavaScript</li><li>Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="tile tile-pixel">
+        <div>
+          <div class="tile-tag">SPECIALITY / 02</div>
+          <h3>Pixel Art</h3>
+          <p>8‑bit and 16‑bit style sprites, icons and scenes, placed grid by grid.</p>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://images.seeklogo.com/logo-png/28/1/autodesk-sketchbook-pro-logo-png_seeklogo-283124.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title frijole-regular">Design</h5>
-              <p class="card-text frijole-regular">i have basic knowledge of <a href="https://www.tiktok.com/@lerbelajargambar" target="_blank">digital art and design</a>. I mainly use tools like Sketchbook, Canva, and <span class="press-start-2p-regular">Piskel (for pixel art)</span></p>
-            </div>
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar" style="width: 50%">50%</div>
-</div>
-          </div>
+        <div class="pixel-wrap"><div class="pixel-grid" id="px-hero"></div></div>
+      </div>
+
+
+      <div class="tile tile-quote">
+        <div>
+          <div class="tile-tag">NOTE</div>
+          <h3 style="font-size:1.2rem;">Two crafts, one hand</h3>
+          <p>Code needs to hold up under real use, pixel art needs to hold up at a glance. I try to give both the same care.</p>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Experience Section -->
-    <div class="container mt-5" id="experience">
-      <h2 class="text-center pirata-one-regular">Experience</h2>
-      <div class="d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">head of school extracurricular activities</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">informatics and multimedia extracurricular activities</h6>
-            <p class="card-text">i have experience leading and managing extracurricular activities in the field of informatics and multimedia.</p>
-            <a href="https://www.instagram.com/formula.sman1mojosari/" class="card-link">Documentation</a>
-            <a href="https://drive.google.com/file/d/1SD2ysBgGl02kbJn6FUAWe2kszO56FtSZ/view?usp=sharing" class="card-link">Certificate</a>
-          </div>
+<!-- PROJECTS -->
+<section class="section" id="projects" style="background:var(--paper-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">SELECTED WORK</div>
+      <h2 class="section-title font-display">Finished art &amp; projects</h2>
+    </div>
+
+    <div class="bento bento-projects reveal">
+
+
+      <div class="tile bp1">
+        <div class="tile-tag">PIXEL ART</div>
+        <h3 style="font-size:1.1rem;">Fire Dragon</h3>
+        <img src="img/my dragon art.gif" alt="Pixel art of a fire dragon" style="width:100%;max-width:300px;">
+      </div>
+
+      <div class="tile bp2">
+        <div class="tile-tag">PIXEL ART</div>
+        <h3 style="font-size:1.1rem;">Sword stuff</h3>
+        <div class="pixel-wrap"><div class="pixel-grid" id="px-sword"></div></div>
+      </div>
+
+      <div class="tile bp3">
+        <div>
+          <div class="tile-tag">WEB / 2026</div>
+          <h3>Cafe Menu &amp; Ordering Page</h3>
+          <p>A single-page menu with cart and WhatsApp checkout, built for a local coffee shop — mobile-first from the start.</p>
+        </div>
+        <ul class="skill-list">
+          <li>Bootstrap</li><li>JS</li><li>Local Storage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7 reveal">
+        <div class="eyebrow">GET IN TOUCH</div>
+        <h2>Have a project in mind?<br>Let's make it.</h2>
+        <p class="lead-text mt-3">Open to freelance web builds, pixel art commissions, and small collaborations. Tell me what you're making — I'll tell you what it'd take.</p>
+        <a href="https://wa.me/6282237437280" class="btn-ink mt-4">
+          Contact Me →
+        </a>
+        <div class="social-row">
+          <a href="github.com/WNalendra">GitHub</a>
+          <a href="https://www.instagram.com/lendra_putra_n/">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end reveal">
+        <div class="seal">
+          <div class="seal-text font-display" >Hey! Lets be friend</div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer mt-5 py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-3 mb-md-0">
-            <h5>Nalendra Putra Niyansyah</h5>
-            <p class="footer-text">Frontend Developer</p>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-0">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#experience">Experience</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h6>Connect With Me</h6>
-            <p class="footer-text">Email: <a href="mailto:nalendrapn@gmail.com">nalendrapn@gmail.com</a></p>
-            <p class="footer-text">WhatsApp: <a href="https://wa.me/6282237437280" target="_blank">+62 822-3743-7280</a></p>
-            <p class="footer-text">Feel free to reach out for collaborations or just a friendly hello!</p>
-          </div>
-        </div>
-        <hr class="footer-divider">
-        <div class="text-center">
-          <p class="footer-text mb-0">&copy; 2026 Nalendra Putra Niyansyah. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+<footer>
+  <div class="container d-flex flex-wrap justify-content-between gap-2">
+    <span>© 2026 NALENDRA</span>
+    <span>MADE WITH IMAGINATION &amp; CODE</span>
+  </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script>
-      // Theme Toggle
-      const themeToggle = document.getElementById('themeToggle');
-      const themeIcon = document.querySelector('.theme-icon');
-      const htmlElement = document.documentElement;
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script>
+// ---- Pixel art renderer ----
+function renderPixel(id, pattern, size){
+  const el = document.getElementById(id);
+  if(!el) return;
+  const rows = pattern.length;
+  const cols = pattern[0].length;
+  el.style.gridTemplateColumns = `repeat(${cols}, ${size}px)`;
+  pattern.forEach(row=>{
+    [...row].forEach(ch=>{
+      const d = document.createElement('div');
+      d.className = 'px';
+      d.style.width = size+'px';
+      d.style.height = size+'px';
+      let color = 'transparent';
+      if(ch === '1') color = '#111111';
+      if(ch === '2') color = '#8a8985';
+      if(ch === '3') color = '#f4f2ec';
+      d.style.background = color;
+      el.appendChild(d);
+    });
+  });
+}
 
-      // Check for saved theme or default to light
-      const currentTheme = localStorage.getItem('theme') || 'light';
-      htmlElement.setAttribute('data-bs-theme', currentTheme);
-      updateThemeIcon(currentTheme);
+// small hero icon: pixel brush/pen tip
+renderPixel('px-hero', [
+  '00000110',
+  '00001110',
+  '00011100',
+  '00111000',
+  '01110000',
+  '11100200',
+  '11002200',
+  '00022000'
+], 8);
 
-      themeToggle.addEventListener('click', function() {
-        const theme = htmlElement.getAttribute('data-bs-theme');
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        htmlElement.setAttribute('data-bs-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
-      });
+// sword
+renderPixel('px-sword', [
+  '000000100',
+  '000001100',
+  '000011100',
+  '000111100',
+  '001111000',
+  '011110000',
+  '011122000',
+  '001111000',
+  '000101000'
+], 9);
 
-      function updateThemeIcon(theme) {
-        themeIcon.textContent = theme === 'light' ? '🌙' : '☀️';
-        themeToggle.title = theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode';
-      }
-    </script>
-  </body>
+// ghost
+renderPixel('px-ghost', [
+  '000111000',
+  '001111100',
+  '011111110',
+  '011311310',
+  '011111110',
+  '011111110',
+  '011111110',
+  '101010101',
+  '000000000'
+], 9);
+
+// tree
+renderPixel('px-tree', [
+  '000100000',
+  '001110000',
+  '011111100',
+  '001110000',
+  '011111100',
+  '000100000',
+  '000100000',
+  '000111000',
+  '000000000'
+], 9);
+
+// ---- scroll reveal ----
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, {threshold:.15});
+revealEls.forEach(el=>io.observe(el));
+</script>
+</body>
 </html>
